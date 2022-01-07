@@ -32,17 +32,24 @@ spec:
       input:
         url: https://github.com/cimarinho/backstage-apis/-/blob/master/templates-teste
         values:
-          name: teste.yaml
+          name: {{parameters.name}}
 
-#
-#    - id: publish
-#      name: Publish
-#      action: publish:gitlab
-#      input:
-#        repoUrl: 'https://gitlab.luizalabs.com/luizalabs/engenharia-apis/backstage-apis'
-#        defaultBranch: 'teste_backstage'
-#        repoVisibility: 'private'
-#        sourcePath: 'templates-teste'
+    - id: publish
+      name: Publish
+      action: publish:github
+      input:
+        allowedHosts: ['github.com']
+        description: This is ${{ parameters.name }}
+        repoUrl: https://github.com/cimarinho/backstage-apis/tree/master/templates
+
+  #  - id: publish
+  #    name: Publish
+  #    action: publish:gitlab
+  #    input:
+  #      repoUrl: 'https://gitlab.luizalabs.com/luizalabs/engenharia-apis/backstage-apis'
+  #      defaultBranch: 'teste_backstage'
+  #      repoVisibility: 'private'
+  #      sourcePath: 'templates-teste'
 
 #
 #    - id: fetch-docs
