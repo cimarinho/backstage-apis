@@ -37,13 +37,13 @@ spec:
 
     - id: publish
       name: Publish
-      action: publish:github
+      action: publish:github:pull-request
       input:
         repoUrl: github.com?repo=backstage-apis&owner=cimarinho
         description: Teste
         access: cimarinho
         repoVisibility: public
-        defaultBranch: master
+        defaultBranch: teste
         sourcePath: templates-teste
 
   #  - id: publish
