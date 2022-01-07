@@ -40,11 +40,9 @@ spec:
       action: publish:github:pull-request
       input:
         repoUrl: github.com?repo=backstage-apis&owner=cimarinho
+        branchName: teste
         title: backstage
         description: Teste
-        access: cimarinho
-        repoVisibility: public
-        defaultBranch: teste
         sourcePath: templates-teste
 
   #  - id: publish
