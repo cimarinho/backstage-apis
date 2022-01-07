@@ -39,9 +39,11 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ['github.com']
-        description: This is ${{ parameters.name }}
         repoUrl: https://github.com/cimarinho/backstage-apis/tree/master/templates
+        description: Teste
+        access: cimarinho
+        repoVisibility: public
+        defaultBranch: master
 
   #  - id: publish
   #    name: Publish
