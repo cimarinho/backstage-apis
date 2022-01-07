@@ -31,6 +31,7 @@ spec:
       action: fetch:template
       input:
         url: https://github.com/cimarinho/backstage-apis/-/blob/master/templates-teste
+        targetPath: /home/marinho/temp/cimarinho
         values:
           name: {{parameters.name}}
 
