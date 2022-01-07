@@ -40,6 +40,7 @@ spec:
       action: publish:github:pull-request
       input:
         repoUrl: github.com?repo=backstage-apis&owner=cimarinho
+        title: backstage
         description: Teste
         access: cimarinho
         repoVisibility: public
