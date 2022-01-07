@@ -39,7 +39,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        repoUrl: https://github.com/cimarinho/backstage-apis
+        repoUrl: github.com?repo=backstage-apis&owner=cimarinho
         description: Teste
         access: cimarinho
         repoVisibility: public
