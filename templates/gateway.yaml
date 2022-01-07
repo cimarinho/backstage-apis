@@ -39,11 +39,12 @@ spec:
       name: Publish
       action: publish:github
       input:
-        repoUrl: https://github.com/cimarinho/backstage-apis/tree/master/templates
+        repoUrl: https://github.com/cimarinho/backstage-apis
         description: Teste
         access: cimarinho
         repoVisibility: public
         defaultBranch: master
+        sourcePath: templates-teste
 
   #  - id: publish
   #    name: Publish
